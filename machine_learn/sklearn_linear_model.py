@@ -17,6 +17,7 @@ CHANGE:  :
 MODIFIED: : @Time : 2018/3/6 下午4:52
 """
 
+import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
@@ -35,3 +36,9 @@ plt.ylabel('Y_label')
 plt.grid(True)
 plt.plot(x, y, 'r-')
 plt.show()
+
+# 方差计算
+variance = np.var([1, 2, 3, 4, 5, 6], ddof=1)
+# 协方差计算
+covariance = np.cov([1,2,3,4,5,6], [1,2.1,2.9,4.2,5.1,5.8])[0][1]
+print(variance, covariance)
