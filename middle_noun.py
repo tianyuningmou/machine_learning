@@ -52,5 +52,5 @@ def find_middle_noun(num_list):
 
 
 if __name__ == '__main__':
-    result = find_middle_noun([1, 2, 3, 4, 7, 5, 6])
-    if
+    result = find_middle_noun([1, 2, 3, 4, 5, 6])
+    print(result[0] if len(result) == 1 else (result[0] + result[1]) / 2)
